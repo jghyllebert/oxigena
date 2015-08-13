@@ -1,0 +1,29 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,700,300);
+
+html, body{
+    height: 100%;
+}
+
+header, footer {
+    display: block;
+}
+
+header { height: 65%;}
+
+.navbar-oxigena {
+    background-color: #FFBA2D;
+}
+
+.navbar-oxigena a {
+    color: #FFF;
+    font-family: 'Oxygen';
+    font-weight: 700;
+}
+
+
+#home-jumbo {
+    background-image: url("../img/AR-150609927.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
