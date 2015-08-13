@@ -1,7 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Oxygen:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Passion+One:400,700);
 
 html, body{
     height: 100%;
+    overflow-x: hidden;
+    font-family: 'Oxygen';
 }
 
 header, footer {
@@ -10,20 +13,124 @@ header, footer {
 
 header { height: 65%;}
 
+article {
+    text-align: center;
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+}
+
+h1, h2, h3 {font-family: 'Passion One'}
+
+/******************************************************************************
+* BOOTSTRAP HACKS
+******************************************************************************/
 .navbar-oxigena {
     background-color: #FFBA2D;
 }
 
 .navbar-oxigena a {
     color: #FFF;
-    font-family: 'Oxygen';
     font-weight: 700;
 }
 
+.navbar-oxigena .nav a:hover {
+    background-color: #DA9200;
+}
+
+.btn-oxigena-primary {
+    border: 2px solid #017E80;
+    color: #017E80;
+    border-radius: 3px 3px;
+}
+
+.btn-oxigena-default {
+    border: 2px solid #FFF;
+    color: #FFF;
+    border-radius: 3px 3px;
+    font-family: 'Oxygen';
+}
+
+/******************************************************************************
+* JUMBOTRON HOMEPAGE
+******************************************************************************/
 
 #home-jumbo {
     background-image: url("../img/AR-150609927.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+}
+
+#home-jumbo h1 {
+    position: relative;
+    top: 15%;
+    left: 5%;
+    font-weight: 700;
+    color: #01ABB3;
+    text-shadow: 3px 5px #006267;
+}
+
+/******************************************************************************
+* ADVANTAGES HOMEPAGE
+******************************************************************************/
+#advantages {
+    min-height: 20%;
+    background-color: #FF8E2D;
+    color: #FFF;
+}
+
+#advantages h2 {
+    font-weight: 400;
+}
+
+#advantages a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/******************************************************************************
+* CUSTOMERS HOMEPAGE
+******************************************************************************/
+#customers h2 {
+    color: #01ABB3;
+}
+#customers .img-responsive {
+    margin: 0 auto;
+}
+
+/******************************************************************************
+* CUSTOMERS HOMEPAGE
+******************************************************************************/
+#case-study {
+    min-height: 65%;
+    background-image: url("../img/club-america-concacaf.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #FFF;
+}
+
+#case-study p {
+    line-height: 1.8em;
+    font-size: 1.2em;
+}
+
+#case-study .col-md-3 {
+    height: 100%;
+    background-color: rgba(87, 121, 205, 0.8);
+}
+
+#case-study header h2 {
+    color: #FFF;
+    font-weight: 400;
+}
+
+
+/******************************************************************************
+* FOOTER
+******************************************************************************/
+footer {
+    margin-top: 5%;
+    min-height: 20%;
+    background-color: #006267;
 }
